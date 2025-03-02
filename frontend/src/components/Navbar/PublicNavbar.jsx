@@ -12,7 +12,7 @@ import "./PublicNavbar.css"
 
 export default function PublicNavbar() {
   return (
-    <Disclosure as="nav" className="bg-white shadow"id="p1">
+    <Disclosure as="nav" className="bg-white shadow"id="p50">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"id="p2">
@@ -33,7 +33,7 @@ export default function PublicNavbar() {
                 <div className="flex flex-shrink-0 items-center"id="p10">
                {/* Logo */}
                   <img 
-                   src="images (16).jpeg"  // Replace with the path to your logo image
+                   src="/images (16).jpeg"  // Replace with the path to your logo image
                    alt="Logo"                   // Add alt text for accessibility
                    className="h-8 w-9"id="p11"       // Apply Tailwind classes for sizing
                  />
@@ -86,7 +86,7 @@ export default function PublicNavbar() {
               <Link to="/">
                 <Disclosure.Button
                   as="button"
-                  className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"id="p25"
+                  className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6" id="p25"
                 >
                   Budget Manager
                 </Disclosure.Button>

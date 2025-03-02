@@ -44,7 +44,12 @@ export default function PrivateNavbar() {
                 </div>
                 <div id="pr7">
                   {/* Logo */}
-                  <SiAuthy id="SiAuthy" />
+                  {/* <SiAuthy id="SiAuthy" /> */}
+                  <img 
+                   src="/images (16).jpeg"  // Replace with the path to your logo image
+                   alt="Logo"                   // Add alt text for accessibility
+                   className="h-8 w-9"id="p11"       // Apply Tailwind classes for sizing
+                 />
                 </div>
                 <div id="pr8">
                   <Link

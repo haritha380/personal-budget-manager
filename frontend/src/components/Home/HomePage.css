@@ -1,5 +1,5 @@
 #ho1 {
-    background: linear-gradient(to right, rgb(74 222 128), rgb(59 130 246)); /* bg-gradient-to-r from-green-400 to-blue-500 */
+    background: linear-gradient(to right, rgb(123, 116, 204), rgb(138, 154, 180)); /* bg-gradient-to-r from-green-400 to-blue-500 */
     color: white; /* text-white */
     padding-top: 5rem; /* py-20 */
     padding-bottom: 5rem; /* py-20 */
@@ -92,6 +92,7 @@
     padding-bottom: 5rem; /* 80px */
     padding-left: 1rem; /* 16px */
     padding-right: 1rem; /* 16px */
+    background-color: white;
   }
   #ho15 {
     font-size: 1.875rem; /* 30px */
@@ -180,7 +181,8 @@
     font-weight: 600; /* Semibold */
   }
   #ho26 {
-    background-color: #f3f4f6; /* Tailwind's gray-100 */
+
+    background-color: #c6d9ff; /* Tailwind's gray-100 */
     padding-top: 5rem; /* 80px */
     padding-bottom: 5rem; /* 80px */
     padding-left: 1rem; /* 16px */

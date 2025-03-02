@@ -45,50 +45,51 @@ const UpdatePassword = () => {
 
   return (
     <div id="w1">
-      <h2 id="w2">Change Your Password</h2>
-      <form onSubmit={formik.handleSubmit} id="w3">
-        <div id="w4">
-          <label
-            id="w5"
-            htmlFor="new-password"
-          >
-            New Password
-          </label>
-          {isPending && <AlertMessage type="loading" message="Updating...." />}
-          {isError && (
-            <AlertMessage type="error" message={error.response.data.message} />
-          )}
-          {isSuccess && (
-            <AlertMessage
-              type="success"
-              message="Password updated successfully"
-            />
-          )}
-          <div id="w6">
-            <AiOutlineLock id="w7" />
-            <input
-              id="new-password"
-              type="password"
-              name="newPassword"
-              {...formik.getFieldProps("password")}
-              className="w8"
-              placeholder="Enter new password"
-            />
+      <section id="load_section">
+        <h2 id="w2">Change Your Password</h2>
+        <form onSubmit={formik.handleSubmit} id="w3">
+          <div id="w4">
+            <label
+              id="w5"
+              htmlFor="new-password"
+            >
+              New Password
+            </label>
+            {isPending && <AlertMessage type="loading" message="Updating...." />}
+            {isError && (
+              <AlertMessage type="error" message={error.response.data.message} />
+            )}
+            {isSuccess && (
+              <AlertMessage
+                type="success"
+                message="Password updated successfully"
+              />
+            )}
+            <div id="w6">
+              <AiOutlineLock id="w7" />
+              <input
+                id="new-password"
+                type="password"
+                name="newPassword"
+                {...formik.getFieldProps("password")}
+                className="w8"
+                placeholder="Enter new password"
+              />
+            </div>
+            {formik.touched.password && formik.errors.password && (
+              <span id="w9">
+                {formik.errors.password}
+              </span>
+            )}
           </div>
-          {formik.touched.password && formik.errors.password && (
-            <span id="w9">
-              {formik.errors.password}
-            </span>
-          )}
-        </div>
-
-        <button
-          type="submit"
-          id="w10"
-        >
-          Update Password
-        </button>
-      </form>
+          <button
+            type="submit"
+            id="w10"
+          >
+            Update Password
+          </button>
+        </form>
+      </section>
     </div>
   );
 };
