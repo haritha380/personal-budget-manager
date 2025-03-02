@@ -1,0 +1,151 @@
+#r1 {
+    max-width: 28rem; /* max-w-md */
+    margin-left: auto; /* mx-auto */
+    margin-right: auto; /* mx-auto */
+    margin-top: 2.5rem; /* my-10 */
+    margin-bottom: 2.5rem; /* my-10 */
+    background-color: white;
+    padding: 1.5rem; /* p-6 */
+    border-radius: 1rem; /* rounded-xl */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* space-y-6 */
+    border: 1px solid #e5e7eb; /* border-gray-200 */
+  }
+  #r2 {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 600; /* font-semibold */
+    text-align: center; /* text-center */
+    color: #2d3748; /* text-gray-800 */
+  }
+  #r3 {
+    font-size: 0.875rem; /* text-sm */
+    text-align: center; /* text-center */
+    color: #6b7280; /* text-gray-500 */
+  }
+  #r4 {
+    position: absolute;
+    top: 0.75rem; /* top-3 */
+    left: 0.75rem; /* left-3 */
+    color: #9ca3af; /* text-gray-400 */
+  }
+  #r5 {
+    padding-left: 2.5rem; /* pl-10 */
+    padding-right: 1rem; /* pr-4 */
+    padding-top: 0.5rem; /* py-2 */
+    padding-bottom: 0.5rem; /* py-2 */
+    width: 100%; /* w-full */
+    border-radius: 0.375rem; /* rounded-md */
+    border: 1px solid #d1d5db; /* border-gray-300 */
+  }
+  
+  #r5:focus {
+    border-color: #3b82f6; /* focus:border-blue-500 */
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); /* focus:ring-blue-500 */
+  }
+  #r6 {
+    font-size: 0.75rem; /* text-xs */
+    color: #f87171; /* text-red-500 */
+  }
+  #r7 {
+    position: relative;
+  }
+  #r8 {
+    position: absolute;
+    top: 0.75rem; /* Equivalent to top-3 (0.75rem in Tailwind CSS) */
+    left: 0.75rem; /* Equivalent to left-3 (0.75rem in Tailwind CSS) */
+    color: #9CA3AF; /* Equivalent to text-gray-400 in Tailwind CSS */
+  }
+  #r9 {
+    padding-left: 2.5rem; /* Equivalent to pl-10 (2.5rem in Tailwind CSS) */
+    padding-right: 1rem; /* Equivalent to pr-4 (1rem in Tailwind CSS) */
+    padding-top: 0.5rem; /* Equivalent to py-2 (0.5rem in Tailwind CSS) */
+    padding-bottom: 0.5rem; /* Equivalent to py-2 (0.5rem in Tailwind CSS) */
+    width: 100%; /* Equivalent to w-full (100% width) */
+    border-radius: 0.375rem; /* Equivalent to rounded-md (0.375rem in Tailwind CSS) */
+    border: 1px solid #D1D5DB; /* Equivalent to border border-gray-300 */
+  }
+  
+  #r9:focus {
+    border-color: #3B82F6; /* Equivalent to focus:border-blue-500 */
+    box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.5); /* Equivalent to focus:ring-blue-500 */
+  }
+  #r10 {
+    font-size: 0.75rem; /* Equivalent to text-xs (0.75rem in Tailwind CSS) */
+    color: #F87171; /* Equivalent to text-red-500 (Tailwind's red-500 color) */
+  }
+  #r11 {
+    position: relative;
+  }
+  #r12 {
+    position: absolute;
+    top: 0.75rem; /* This is equivalent to 3 units in Tailwind */
+    left: 0.75rem; /* This is equivalent to 3 units in Tailwind */
+    color: #9ca3af; /* This is the equivalent of text-gray-400 in Tailwind */
+  }
+  #r13 {
+    padding-left: 2.5rem; /* Equivalent to pl-10 in Tailwind */
+    padding-right: 1rem; /* Equivalent to pr-4 in Tailwind */
+    padding-top: 0.5rem; /* Equivalent to py-2 in Tailwind */
+    padding-bottom: 0.5rem; /* Equivalent to py-2 in Tailwind */
+    width: 100%; /* Equivalent to w-full in Tailwind */
+    border-radius: 0.375rem; /* Equivalent to rounded-md in Tailwind */
+    border: 1px solid #d1d5db; /* Equivalent to border-gray-300 in Tailwind */
+  }
+  
+  #r13:focus {
+    border-color: #3b82f6; /* Equivalent to focus:border-blue-500 in Tailwind */
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5); /* Equivalent to focus:ring-blue-500 in Tailwind */
+  }
+  #r14 {
+    font-size: 0.75rem; /* Equivalent to text-xs in Tailwind */
+    color: #f87171; /* Equivalent to text-red-500 in Tailwind */
+  }
+  #r15 {
+    position: relative;
+  }
+  #r16 {
+    position: absolute;
+    top: 0.75rem;  /* 3 * 0.25rem = 0.75rem */
+    left: 0.75rem; /* 3 * 0.25rem = 0.75rem */
+    color: #9ca3af; /* The text-gray-400 color */
+  }
+  #r17 {
+    padding-left: 2.5rem; /* 10 * 0.25rem = 2.5rem */
+    padding-right: 1rem; /* 4 * 0.25rem = 1rem */
+    padding-top: 0.5rem; /* 2 * 0.25rem = 0.5rem */
+    padding-bottom: 0.5rem; /* 2 * 0.25rem = 0.5rem */
+    width: 100%; /* Full width */
+    border-radius: 0.375rem; /* rounded-md */
+    border: 1px solid #d1d5db; /* border-gray-300 */
+  }
+  
+  #r17:focus {
+    border-color: #3b82f6; /* focus:border-blue-500 */
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); /* focus:ring-blue-500 */
+  }
+  #r18 {
+    font-size: 0.75rem; /* text-xs */
+    color: #f87171; /* text-red-500 */
+  }
+  #r19 {
+    width: 100%;
+    background-image: linear-gradient(to right, #3b82f6, #14b8a6); /* bg-gradient-to-r from-blue-500 to-teal-500 */
+    color: white; /* text-white */
+    font-weight: 700; /* font-bold */
+    padding: 0.5rem 1rem; /* py-2 px-4 */
+    border-radius: 0.375rem; /* rounded-md */
+    outline: none; /* focus:outline-none */
+    box-shadow: 0 0 0 2px rgba(75, 85, 99, 0.3); /* focus:shadow-outline */
+    transition: all 0.15s ease-in-out; /* transition duration-150 ease-in-out */
+  }
+  
+  #r19:hover {
+    background-image: linear-gradient(to right, #2563eb, #0d9488); /* hover:from-blue-600 hover:to-teal-600 */
+  }
+  #r20 {
+    position: relative;
+  }
+                            
+              

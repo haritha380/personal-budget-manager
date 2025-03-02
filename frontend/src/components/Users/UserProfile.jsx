@@ -29,12 +29,12 @@ const UserProfile = () => {
   });
   return (
     <>
-      <div className="max-w-4xl mx-auto my-10 p-8 bg-white rounded-lg shadow-md">
-        <h1 className="mb-2 text-2xl text-center font-extrabold">
+      <div id="u1">
+        <h1 id="u2">
           Welcome
           {/* <span className="text-gray-500 text-sm ml-2">info@gmail.com</span> */}
         </h1>
-        <h3 className="text-xl font-semibold text-gray-800 mb-4">
+        <h3 id="u3">
           Update Profile
         </h3>
         {/* Display message */}
@@ -45,14 +45,14 @@ const UserProfile = () => {
         {isSuccess && (
           <AlertMessage type="success" message="Updated successfully" />
         )}
-        <form onSubmit={formik.handleSubmit} className="space-y-6">
+        <form onSubmit={formik.handleSubmit} id="u4">
           {/* User Name Field */}
-          <div className="flex items-center space-x-4">
-            <FaUserCircle className="text-3xl text-gray-400" />
-            <div className="flex-1">
+          <div id="u5">
+            <FaUserCircle id="u6" />
+            <div id="u7">
               <label
                 htmlFor="username"
-                className="text-sm font-medium text-gray-700"
+                id="u8"
               >
                 Username
               </label>
@@ -60,24 +60,24 @@ const UserProfile = () => {
                 {...formik.getFieldProps("username")}
                 type="text"
                 id="username"
-                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-4 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                className="u9"
                 placeholder="Your username"
               />
             </div>
             {formik.touched.username && formik.errors.username && (
-              <span className="text-xs text-red-500">
+              <span id="u10">
                 {formik.errors.username}
               </span>
             )}
           </div>
 
           {/* Email Field */}
-          <div className="flex items-center space-x-4">
-            <FaEnvelope className="text-3xl text-gray-400" />
-            <div className="flex-1">
+          <div id="u11">
+            <FaEnvelope id="u12" />
+            <div id="u13">
               <label
                 htmlFor="email"
-                className="text-sm font-medium text-gray-700"
+                id="u14"
               >
                 Email
               </label>
@@ -85,22 +85,22 @@ const UserProfile = () => {
                 type="email"
                 id="email"
                 {...formik.getFieldProps("email")}
-                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-4 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                className="u15"
                 placeholder="Your email"
               />
             </div>
             {formik.touched.email && formik.errors.email && (
-              <span className="text-xs text-red-500">
+              <span id="u16">
                 {formik.errors.email}
               </span>
             )}
           </div>
 
           {/* Save Changes Button */}
-          <div className="flex justify-end mt-6">
+          <div id="u17">
             <button
               type="submit"
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"id="u18"
             >
               Save Changes
             </button>

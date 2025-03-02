@@ -1,0 +1,16 @@
+#c1 {
+    margin-top: 2rem; /* 32px (my-8) */
+    margin-bottom: 2rem; /* 32px (my-8) */
+    padding: 1.5rem; /* 24px (p-6) */
+    background-color: #ffffff; /* bg-white */
+    border-radius: 0.5rem; /* 8px (rounded-lg) */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* shadow-xl */
+    border: 1px solid #e5e7eb; /* border-gray-200 */
+  }
+  #c2 {
+    font-size: 1.5rem; /* 24px (text-2xl) */
+    font-weight: 700; /* Bold (font-bold) */
+    text-align: center; /* text-center */
+    margin-bottom: 1.5rem; /* 24px (mb-6) */
+  }
+ 

@@ -13,109 +13,109 @@ import { Link } from "react-router-dom";
 const HeroSection = () => {
   return (
     <>
-      <div className="bg-gradient-to-r from-green-400 to-blue-500 text-white py-20 px-4">
-        <div className="max-w-7xl mx-auto flex flex-col items-center">
+      <div  id="ho1">
+        <div id="ho2">
           {/* Heading */}
-          <h1 className="text-5xl font-bold text-center">
-            Track Your Expenses Effortlessly
+          <h1 id="ho3">
+            Empower Your Wallet, Simplify Your Life
           </h1>
 
           {/* Subheading */}
-          <p className="mt-4 text-xl text-center">
-            Manage your finances with a modern solution designed for you.
+          <p id="ho4">
+            Let’s make your financial dreams a reality withBudget Manager!
           </p>
 
           {/* Feature Icons */}
-          <div className="flex space-x-8 mt-10">
-            <div className="flex flex-col items-center">
-              <FaMoneyBillWave className="text-3xl" />
-              <p className="mt-2">Efficient Tracking</p>
+          <div id="ho5">
+            <div id="ho6">
+              <FaMoneyBillWave id="FaMoneyBillWave" />
+              <p id="ho7">Efficient Tracking</p>
             </div>
-            <div className="flex flex-col items-center">
-              <FaFilter className="text-3xl" />
-              <p className="mt-2">Transactions Filtering</p>
+            <div id="ho8">
+              <FaFilter id="FaFilter" />
+              <p id="ho9">Transactions Filtering</p>
             </div>
-            <div className="flex flex-col items-center">
-              <IoIosStats className="text-3xl" />
-              <p className="mt-2">Insightful Reports</p>
+            <div id="ho10">
+              <IoIosStats id="ho11" />
+              <p id="ho12">Insightful Reports</p>
             </div>
           </div>
 
           {/* Call to Action Button */}
           <Link to="/register">
-            <button className="mt-8 px-6 py-3 bg-white text-green-500 font-semibold rounded-lg shadow-md hover:bg-gray-100 transition duration-300">
+            <button id="ho13">
               Get Started
             </button>
           </Link>
         </div>
       </div>
       {/* How it works */}
-      <div className="py-20 px-4">
-        <h2 className="text-3xl font-bold text-center text-gray-800">
+      <div id="ho14">
+        <h2 id="ho15">
           How It Works
         </h2>
-        <div className="mt-10 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div id="ho16">
           {/* Step 1 */}
-          <div className="flex flex-col items-center text-center">
-            <div className="p-4 rounded-full bg-blue-500 text-white mb-4">
-              <FaSignInAlt className="text-xl" />
+          <div id="ho17">
+            <div id="ho18">
+              <FaSignInAlt  id="FaSignInAlt"/>
             </div>
-            <h3 className="mb-2 font-semibold">Sign Up</h3>
+            <h3 id="ho19">Sign Up</h3>
             <p>Register and start managing your expenses in a minute.</p>
           </div>
           {/* Step 2 */}
-          <div className="flex flex-col items-center text-center">
-            <div className="p-4 rounded-full bg-green-500 text-white mb-4">
-              <FaList className="text-xl" />
+          <div id="ho20">
+            <div id="ho21">
+              <FaList  id="FaList"/>
             </div>
-            <h3 className="mb-2 font-semibold">Add Transactions</h3>
+            <h3 id="ho22">Add Transactions</h3>
             <p>Quickly add income and expenses to your account.</p>
           </div>
           {/* Step 3 */}
-          <div className="flex flex-col items-center text-center">
-            <div className="p-4 rounded-full bg-yellow-500 text-white mb-4">
-              <FaChartPie className="text-xl" />
+          <div id="ho23">
+            <div id="ho24">
+              <FaChartPie id="FaChartPie" />
             </div>
-            <h3 className="mb-2 font-semibold">View Reports</h3>
+            <h3 id="ho25">View Reports</h3>
             <p>See insightful reports & graphs of your finances.</p>
           </div>
         </div>
       </div>
       {/* Testimonials */}
-      <div className="bg-gray-100 py-20 px-4">
-        <h2 className="text-3xl font-bold text-center text-gray-800">
-          What Our Users Say
+      <div id="ho26">
+        <h2 id="ho27">
+          Feedback From Our Users
         </h2>
-        <div className="mt-10 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <FaQuoteLeft className="text-xl text-gray-400" />
-            <p className="mt-4">
+        <div id="ho28">
+          <div id="ho29">
+            <FaQuoteLeft id="FaQuoteLeft" />
+            <p id="ho30">
               "This app has revolutionized the way I track my expenses. Highly
               intuitive and user-friendly."
             </p>
-            <p className="mt-4 font-bold">- Jane Doe</p>
+            <p id="ho31">- Keshika Dulanjith</p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <FaQuoteLeft className="text-xl text-gray-400" />
-            <p className="mt-4">
+          <div id="ho32">
+            <FaQuoteLeft id="FaQuoteLeft" />
+            <p id="ho33">
               "Finally, a hassle-free way to manage my finances. The insights
               feature is a game changer!"
             </p>
-            <p className="mt-4 font-bold">- John Smith</p>
+            <p id="ho34">- Thilan Weerasinghe</p>
           </div>
         </div>
       </div>
       {/* CTA */}
-      <div className="bg-blue-500 text-white py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold">
+      <div id="ho35">
+        <div id="ho36">
+          <h2 id="ho37">
             Ready to Take Control of Your Finances?
           </h2>
-          <p className="mt-4">
+          <p id="ho38">
             Join us now and start managing your expenses like a pro!
           </p>
           <Link to="/register">
-            <button className="mt-8 px-6 py-3 bg-white text-blue-500 font-semibold rounded-lg shadow-md hover:bg-gray-100 transition duration-300">
+            <button id="ho39">
               Sign Up For Free
             </button>
           </Link>

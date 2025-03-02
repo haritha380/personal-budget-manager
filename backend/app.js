@@ -5,6 +5,7 @@ const errorHandler = require("./middlewares/errorHandlerMiddleware");
 const categoryRouter = require("./routes/categoryRouter");
 const transactionRouter = require("./routes/transactionRouter");
 const app = express();
+const cors = require("cors");
 //!Connect to mongodb
 mongoose
  .connect("mongodb+srv://Haritha:Haritha1234@mongo4961.h9x21.mongodb.net/")
@@ -12,6 +13,7 @@ mongoose
  .catch((e) => console.log(e));
  //!Middlewares
  app.use(express.json()); //?pass incoming jason data
+ app.use(cors());
 //!Routes
 app.use("/",userRouter);
 app.use("/",categoryRouter);

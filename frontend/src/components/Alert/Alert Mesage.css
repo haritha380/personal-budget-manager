@@ -1,0 +1,30 @@
+#AiOutlineCloseCircle {
+    color: rgb(220 38 38); /* text-red-600 */
+    font-size: 1.5rem; /* text-2xl */
+    line-height: 2rem; /* Tailwind's text-2xl also sets line-height */
+}
+#AiOutlineCheckCircle {
+    color: rgb(22 163 74); /* text-green-600 */
+    font-size: 1.5rem; /* text-2xl */
+    line-height: 2rem; /* Tailwind's text-2xl also sets line-height */
+}
+#AiOutlineLoading3Quarters {
+    color: rgb(37 99 235); /* text-blue-600 */
+    font-size: 1.5rem; /* text-2xl */
+    line-height: 2rem; /* Tailwind's text-2xl also sets line-height */
+    animation: spin 1s linear infinite; /* animate-spin */
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+#Alertmassage {
+    font-size: 0.875rem; /* text-sm */
+    line-height: 1.25rem; /* Tailwind's text-sm also sets line-height */
+    font-weight: 500; /* font-medium */
+}

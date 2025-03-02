@@ -67,13 +67,13 @@ const TransactionForm = () => {
   return (
     <form
       onSubmit={formik.handleSubmit}
-      className="max-w-lg mx-auto my-10 bg-white p-6 rounded-lg shadow-lg space-y-6"
+      id="f1"
     >
-      <div className="text-center">
-        <h2 className="text-2xl font-semibold text-gray-800">
+      <div id="f2">
+        <h2 id="f3">
           Transaction Details
         </h2>
-        <p className="text-gray-600">Fill in the details below.</p>
+        <p id="f4">Fill in the details below.</p>
       </div>
       {/* Display alert message */}
 
@@ -90,32 +90,32 @@ const TransactionForm = () => {
         <AlertMessage type="success" message="Transaction added successfully" />
       )}
       {/* Transaction Type Field */}
-      <div className="space-y-2">
+      <div id="f5">
         <label
           htmlFor="type"
-          className="flex gap-2 items-center text-gray-700 font-medium"
+          id="f6"
         >
-          <FaWallet className="text-blue-500" />
+          <FaWallet id="f7" />
           <span>Type</span>
         </label>
         <select
           {...formik.getFieldProps("type")}
           id="type"
-          className="block w-full p-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+          className="f8"
         >
           <option value="">Select transaction type</option>
           <option value="income">Income</option>
           <option value="expense">Expense</option>
         </select>
         {formik.touched.type && formik.errors.type && (
-          <p className="text-red-500 text-xs">{formik.errors.type}</p>
+          <p id="f9">{formik.errors.type}</p>
         )}
       </div>
 
       {/* Amount Field */}
-      <div className="flex flex-col space-y-1">
-        <label htmlFor="amount" className="text-gray-700 font-medium">
-          <FaDollarSign className="inline mr-2 text-blue-500" />
+      <div id="f10">
+        <label htmlFor="amount" id="f11">
+          <FaDollarSign id="f12" />
           Amount
         </label>
         <input
@@ -123,23 +123,23 @@ const TransactionForm = () => {
           {...formik.getFieldProps("amount")}
           id="amount"
           placeholder="Amount"
-          className="w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+          className="f13"
         />
         {formik.touched.amount && formik.errors.amount && (
-          <p className="text-red-500 text-xs italic">{formik.errors.amount}</p>
+          <p id="f14">{formik.errors.amount}</p>
         )}
       </div>
 
       {/* Category Field */}
-      <div className="flex flex-col space-y-1">
-        <label htmlFor="category" className="text-gray-700 font-medium">
-          <FaRegCommentDots className="inline mr-2 text-blue-500" />
+      <div id="f15">
+        <label htmlFor="category" id="f16">
+          <FaRegCommentDots id="f17" />
           Category
         </label>
         <select
           {...formik.getFieldProps("category")}
           id="category"
-          className="w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+          className="f18"
         >
           <option value="">Select a category</option>
           {data?.map((category) => {
@@ -151,33 +151,33 @@ const TransactionForm = () => {
           })}
         </select>
         {formik.touched.category && formik.errors.category && (
-          <p className="text-red-500 text-xs italic">
+          <p id="f19">
             {formik.errors.category}
           </p>
         )}
       </div>
 
       {/* Date Field */}
-      <div className="flex flex-col space-y-1">
-        <label htmlFor="date" className="text-gray-700 font-medium">
-          <FaCalendarAlt className="inline mr-2 text-blue-500" />
+      <div id="f20">
+        <label htmlFor="date" id="f21">
+          <FaCalendarAlt id="f22" />
           Date
         </label>
         <input
           type="date"
           {...formik.getFieldProps("date")}
           id="date"
-          className="w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+          className="f23"
         />
         {formik.touched.date && formik.errors.date && (
-          <p className="text-red-500 text-xs italic">{formik.errors.date}</p>
+          <p id="f24">{formik.errors.date}</p>
         )}
       </div>
 
       {/* Description Field */}
-      <div className="flex flex-col space-y-1">
-        <label htmlFor="description" className="text-gray-700 font-medium">
-          <FaRegCommentDots className="inline mr-2 text-blue-500" />
+      <div id="f25">
+        <label htmlFor="description" id="f26">
+          <FaRegCommentDots id="f27" />
           Description (Optional)
         </label>
         <textarea
@@ -185,10 +185,10 @@ const TransactionForm = () => {
           id="description"
           placeholder="Description"
           rows="3"
-          className="w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+          className="f28"
         ></textarea>
         {formik.touched.description && formik.errors.description && (
-          <p className="text-red-500 text-xs italic">
+          <p id="f29">
             {formik.errors.description}
           </p>
         )}
@@ -197,7 +197,7 @@ const TransactionForm = () => {
       {/* Submit Button */}
       <button
         type="submit"
-        className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition-colors duration-200"
+        id="f30"
       >
         Submit Transaction
       </button>

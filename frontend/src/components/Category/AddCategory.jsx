@@ -48,13 +48,13 @@ const AddCategory = () => {
   return (
     <form
       onSubmit={formik.handleSubmit}
-      className="max-w-lg mx-auto my-10 bg-white p-6 rounded-lg shadow-lg space-y-6"
+      id="Addc1"
     >
-      <div className="text-center">
-        <h2 className="text-2xl font-semibold text-gray-800">
+      <div id="Addc2">
+        <h2  id="Addc3">
           Add New Category
         </h2>
-        <p className="text-gray-600">Fill in the details below.</p>
+        <p id="Addc4">Fill in the details below.</p>
       </div>
       {/* Display alert message */}
       {isError && (
@@ -73,32 +73,32 @@ const AddCategory = () => {
         />
       )}
       {/* Category Type */}
-      <div className="space-y-2">
+      <div  id="Addc5">
         <label
           htmlFor="type"
-          className="flex gap-2 items-center text-gray-700 font-medium"
+           id="Addc6"
         >
-          <FaWallet className="text-blue-500" />
+          <FaWallet  id="Addc7" />
           <span>Type</span>
         </label>
         <select
           {...formik.getFieldProps("type")}
           id="type"
-          className="w-full p-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+          className=" Addc8"
         >
           <option value="">Select transaction type</option>
           <option value="income">Income</option>
           <option value="expense">Expense</option>
         </select>
         {formik.touched.type && formik.errors.type && (
-          <p className="text-red-500 text-xs">{formik.errors.type}</p>
+          <p  id="Addc9">{formik.errors.type}</p>
         )}
       </div>
 
       {/* Category Name */}
       <div className="flex flex-col">
-        <label htmlFor="name" className="text-gray-700 font-medium">
-          <SiDatabricks className="inline mr-2 text-blue-500" />
+        <label htmlFor="name"  id="Addc10">
+          <SiDatabricks  id="SiDatabricks" />
           Name
         </label>
         <input
@@ -106,17 +106,17 @@ const AddCategory = () => {
           {...formik.getFieldProps("name")}
           placeholder="Name"
           id="name"
-          className="w-full mt-1 border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 py-2 px-3"
+          className="Addc11"
         />
         {formik.touched.name && formik.errors.name && (
-          <p className="text-red-500 text-xs italic">{formik.errors.name}</p>
+          <p  id="Addc12">{formik.errors.name}</p>
         )}
       </div>
 
       {/* Submit Button */}
       <button
         type="submit"
-        className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition-colors duration-200 transform"
+         id="Addc13"
       >
         Add Category
       </button>

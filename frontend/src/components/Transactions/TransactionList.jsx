@@ -43,15 +43,15 @@ const TransactionList = () => {
   });
 
   return (
-    <div className="my-4 p-4 shadow-lg rounded-lg bg-white">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+    <div id="l1">
+      <div id="l2">
         {/* Start Date */}
         <input
           type="date"
           name="startDate"
           value={filters.startDate}
           onChange={handleFilterChange}
-          className="p-2 rounded-lg border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+          id="l3"
         />
         {/* End Date */}
         <input
@@ -59,29 +59,29 @@ const TransactionList = () => {
           onChange={handleFilterChange}
           type="date"
           name="endDate"
-          className="p-2 rounded-lg border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+          id="l4"
         />
         {/* Type */}
-        <div className="relative">
+        <div id="l5">
           <select
             name="type"
             value={filters.type}
             onChange={handleFilterChange}
-            className="w-full p-2 rounded-lg border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 appearance-none"
+            className="w-full p-2 rounded-lg border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 appearance-none"id="l6"
           >
             <option value="">All Types</option>
             <option value="income">Income</option>
             <option value="expense">Expense</option>
           </select>
-          <ChevronDownIcon className="w-5 h-5 absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-500" />
+          <ChevronDownIcon id="l7" />
         </div>
         {/* Category */}
-        <div className="relative">
+        <div id="l8">
           <select
             value={filters.category}
             onChange={handleFilterChange}
             name="category"
-            className="w-full p-2 rounded-lg border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 appearance-none"
+            className="w-full p-2 rounded-lg border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 appearance-none"id="l9"
           >
             <option value="All">All Categories</option>
             <option value="Uncategorized">Uncategorized</option>
@@ -93,23 +93,23 @@ const TransactionList = () => {
               );
             })}
           </select>
-          <ChevronDownIcon className="w-5 h-5 absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-500" />
+          <ChevronDownIcon id="l10" />
         </div>
       </div>
-      <div className="my-4 p-4 shadow-lg rounded-lg bg-white">
+      <div id="l11">
         {/* Inputs and selects for filtering (unchanged) */}
-        <div className="mt-6 bg-gray-50 p-4 rounded-lg shadow-inner">
-          <h3 className="text-xl font-semibold mb-4 text-gray-800">
+        <div id="l12">
+          <h3 id="l13">
             Filtered Transactions
           </h3>
-          <ul className="list-disc pl-5 space-y-2">
+          <ul className="list-disc pl-5 space-y-2"id="l14">
             {transactions?.map((transaction) => (
               <li
                 key={transaction._id}
-                className="bg-white p-3 rounded-md shadow border border-gray-200 flex justify-between items-center"
+                id="l15"
               >
                 <div>
-                  <span className="font-medium text-gray-600">
+                  <span id="l16">
                     {new Date(transaction.date).toLocaleDateString()}
                   </span>
                   <span
@@ -122,24 +122,24 @@ const TransactionList = () => {
                     {transaction.type.charAt(0).toUpperCase() +
                       transaction.type.slice(1)}
                   </span>
-                  <span className="ml-2 text-gray-800">
+                  <span id="l17">
                     {transaction.category?.name} - $
                     {transaction.amount.toLocaleString()}
                   </span>
-                  <span className="text-sm text-gray-600 italic ml-2">
+                  <span id="l18">
                     {transaction.description}
                   </span>
                 </div>
-                <div className="flex space-x-3">
+                <div id="l19">
                   <button
                     onClick={() => handleUpdateTransaction(transaction._id)}
-                    className="text-blue-500 hover:text-blue-700"
+                    id="l20"
                   >
                     <FaEdit />
                   </button>
                   <button
                     onClick={() => handleDelete(transaction._id)}
-                    className="text-red-500 hover:text-red-700"
+                    id="l21"
                   >
                     <FaTrash />
                   </button>

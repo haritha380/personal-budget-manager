@@ -22,87 +22,87 @@ export default function PrivateNavbar() {
   };
 
   return (
-    <Disclosure as="nav" className="bg-white ">
+    <Disclosure as="nav" id="Disclosure">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="flex h-16 justify-start items-center">
-              <div className="flex justify-center flex-row w-full">
-                <div className="-ml-2 mr-2 flex items-left md:hidden">
+          <div id="pr1">
+            <div id="pr2">
+              <div id="pr3">
+                <div cid="pr4">
                   {/* Mobile menu button */}
-                  <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-                    <span className="absolute -inset-0.5" />
-                    <span className="sr-only">Open main menu</span>
+                  <Disclosure.Button id="Disclosure.Button">
+                    <span id="pr5" />
+                    <span id="pr6">Open main menu</span>
                     {open ? (
-                      <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                      <XMarkIcon id="XMarkIcon " aria-hidden="true" />
                     ) : (
-                      <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                      <Bars3Icon id="Bars3Icon" aria-hidden="true" />
                     )}
                   </Disclosure.Button>
                 </div>
-                <div className="flex flex-shrink-0 items-center">
+                <div id="pr7">
                   {/* Logo */}
-                  <SiAuthy className="h-8 w-auto text-green-500" />
+                  <SiAuthy id="SiAuthy" />
                 </div>
-                <div className="hidden md:ml-6 md:flex md:space-x-8">
+                <div id="pr8">
                   <Link
                     to="/"
-                    className="inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900"
+                    id="pr9"
                   >
-                    MasyncTracker
+                    Budget Manager
                   </Link>
                 </div>
-                <div className="hidden md:ml-6 md:flex md:space-x-8">
+                <div id="pr10">
                   <Link
                     to="/add-transaction"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    id="pr11"
                   >
                     Add Transaction
                   </Link>
                   <Link
                     to="/add-category"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    id="pr12"
                   >
                     Add Category
                   </Link>
                   <Link
                     to="/categories"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    id="pr13"
                   >
                     Categories
                   </Link>
                   <Link
                     to="/profile"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    id="pr14"
                   >
                     Profile
                   </Link>
                   <Link
                     to="/dashboard"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    id="pr15"
                   >
                     Dashboard
                   </Link>
                 </div>
               </div>
-              <div className="flex items-center">
-                <div className="flex-shrink-0">
+              <div id="pr16">
+                <div id="pr17">
                   <button
                     onClick={logoutHandler}
                     type="button"
-                    className="relative m-2 inline-flex items-center gap-x-1.5 rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600"
+                    id="pr18"
                   >
-                    <IoLogOutOutline className="h-5 w-5" aria-hidden="true" />
+                    <IoLogOutOutline id="IoLogOutOutline" aria-hidden="true" />
                     <span>Logout</span>
                   </button>
                 </div>
-                <div className="hidden md:ml-1 md:flex md:flex-shrink-0 md:items-center">
+                <div id="pr19">
                   {/* Profile dropdown */}
-                  <Menu as="div" className="relative ml-1">
+                  <Menu as="div" id="pr20">
                     <div>
-                      <Menu.Button className="relative flex rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                        <span className="absolute -inset-1.5" />
-                        <span className="sr-only">Open user menu</span>
+                      <Menu.Button id="Menu.Button">
+                        <span id="pr21" />
+                        <span id="pr22">Open user menu</span>
                       </Menu.Button>
                     </div>
                     <Transition
@@ -114,7 +114,7 @@ export default function PrivateNavbar() {
                       leaveFrom="transform opacity-100 scale-100"
                       leaveTo="transform opacity-0 scale-95"
                     >
-                      <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                      <Menu.Items id="pr23">
                         <Menu.Item>
                           {({ active }) => (
                             <Link
@@ -149,12 +149,12 @@ export default function PrivateNavbar() {
             </div>
           </div>
           {/* Mobile Navs  private links*/}
-          <Disclosure.Panel className="md:hidden">
-            <div className="space-y-1 pb-3 pt-2">
+          <Disclosure.Panel id="Disclosure.Panel">
+            <div id="pr24">
               <Link to="/">
                 <Disclosure.Button
                   as="button"
-                  className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
+                  id="pr25"
                 >
                   MasyncTracker
                 </Disclosure.Button>
@@ -162,7 +162,7 @@ export default function PrivateNavbar() {
               <Link to="/add-transaction">
                 <Disclosure.Button
                   as="button"
-                  className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
+                  id="pr26"
                 >
                   Add Transaction
                 </Disclosure.Button>
@@ -170,7 +170,7 @@ export default function PrivateNavbar() {
               <Link to="/add-category">
                 <Disclosure.Button
                   as="button"
-                  className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
+                  id="pr27"
                 >
                   Add Category
                 </Disclosure.Button>
@@ -178,7 +178,7 @@ export default function PrivateNavbar() {
               <Link to="/categories">
                 <Disclosure.Button
                   as="button"
-                  className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
+                  id="pr29"
                 >
                   Categories
                 </Disclosure.Button>
@@ -186,7 +186,7 @@ export default function PrivateNavbar() {
               <Link to="/profile">
                 <Disclosure.Button
                   as="button"
-                  className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
+                  id="pr30"
                 >
                   Profile
                 </Disclosure.Button>
@@ -194,19 +194,19 @@ export default function PrivateNavbar() {
               <Link to="/dashboard">
                 <Disclosure.Button
                   as="button"
-                  className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
+                  id="pr31"
                 >
                   My Dashboard
                 </Disclosure.Button>
               </Link>
             </div>
             {/* Profile links */}
-            <div className="border-t border-gray-200 pb-3 pt-4">
-              <div className="mt-3 space-y-1">
+            <div id="pr32">
+              <div id="pr33">
                 <Disclosure.Button
                   as="button"
                   // onClick={logoutHandler}
-                  className="block px-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-800 sm:px-6"
+                  id="pr34"
                 >
                   Sign out
                 </Disclosure.Button>

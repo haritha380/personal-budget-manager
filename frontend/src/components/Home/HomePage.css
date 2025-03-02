@@ -1,0 +1,287 @@
+#ho1 {
+    background: linear-gradient(to right, rgb(74 222 128), rgb(59 130 246)); /* bg-gradient-to-r from-green-400 to-blue-500 */
+    color: white; /* text-white */
+    padding-top: 5rem; /* py-20 */
+    padding-bottom: 5rem; /* py-20 */
+    padding-left: 1rem; /* px-4 */
+    padding-right: 1rem; /* px-4 */
+}
+#ho2 {
+    max-width: 80rem; /* max-w-7xl */
+    margin-left: auto; /* mx-auto */
+    margin-right: auto; /* mx-auto */
+    display: flex; /* flex */
+    flex-direction: column; /* flex-col */
+    align-items: center; /* items-center */
+}
+#ho3 {
+    font-size: 3rem; /* text-5xl */
+    line-height: 1; /* Tailwind's text-5xl also sets line-height */
+    font-weight: 700; /* font-bold */
+    text-align: center; /* text-center */
+}
+#ho4 {
+    margin-top: 1rem; /* mt-4 */
+    font-size: 1.25rem; /* text-xl */
+    line-height: 1.75rem; /* Tailwind's text-xl also sets line-height */
+    text-align: center; /* text-center */
+}
+#ho5 {
+    display: flex; /* flex */
+    margin-top: 2.5rem; /* mt-10 */
+}
+
+#ho5 > * + * {
+    margin-left: 2rem; /* space-x-8 */
+}
+#ho6 {
+    display: flex; /* flex */
+    flex-direction: column; /* flex-col */
+    align-items: center; /* items-center */
+}
+#FaMoneyBillWave {
+    font-size: 1.875rem; /* text-3xl */
+    line-height: 2.25rem; /* Tailwind's text-3xl also sets line-height */
+}
+#ho7 {
+    margin-top: 0.5rem; /* mt-2 */
+}
+#ho8 {
+    display: flex; /* flex */
+    flex-direction: column; /* flex-col */
+    align-items: center; /* items-center */
+}
+#FaFilter {
+    font-size: 1.875rem; /* text-3xl */
+    line-height: 2.25rem; /* Tailwind's text-3xl also sets line-height */
+}
+#ho9 {
+    margin-top: 0.5rem; /* mt-2 */
+}
+#ho10 {
+    display: flex; /* flex */
+    flex-direction: column; /* flex-col */
+    align-items: center; /* items-center */
+}
+#ho11 {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem; /* 36px */
+  }
+  #ho12 {
+    margin-top: 0.5rem; /* 8px */
+  }
+  #ho13 {
+    margin-top: 2rem; /* 32px */
+    padding-left: 1.5rem; /* 24px */
+    padding-right: 1.5rem; /* 24px */
+    padding-top: 0.75rem; /* 12px */
+    padding-bottom: 0.75rem; /* 12px */
+    background-color: white;
+    color: #22c55e; /* Tailwind's green-500 */
+    font-weight: 600; /* Semibold */
+    border-radius: 0.5rem; /* 8px */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Medium shadow */
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #ho13:hover {
+    background-color: #f3f4f6; /* Tailwind's gray-100 */
+  }
+  #ho14 {
+    padding-top: 5rem; /* 80px */
+    padding-bottom: 5rem; /* 80px */
+    padding-left: 1rem; /* 16px */
+    padding-right: 1rem; /* 16px */
+  }
+  #ho15 {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem; /* 36px */
+    font-weight: 700; /* Bold */
+    text-align: center;
+    color: #1f2937; /* Tailwind's gray-800 */
+  }
+  #ho16 {
+    margin-top: 2.5rem; /* 40px */
+    max-width: 56rem; /* 896px */
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr; /* Default to 1 column */
+    gap: 2rem; /* 32px */
+  }
+  
+  /* Apply 3-column layout on medium (md) screens and above */
+  @media (min-width: 768px) {
+    #ho16 {
+      grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    }
+  }
+  #ho17 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #ho18 {
+    padding: 1rem; /* 16px */
+    border-radius: 9999px; /* Fully rounded (circular) */
+    background-color: #3b82f6; /* Tailwind's blue-500 */
+    color: white;
+    margin-bottom: 1rem; /* 16px */
+  }
+  #FaSignInAlt {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
+  }
+  #ho19 {
+    margin-bottom: 0.5rem; /* 8px */
+    font-weight: 600; /* Semibold */
+  }
+  #ho20 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #ho21 {
+    padding: 1rem; /* 16px */
+    border-radius: 9999px; /* Fully rounded (circular) */
+    background-color: #10b981; /* Tailwind's green-500 */
+    color: white;
+    margin-bottom: 1rem; /* 16px */
+  }
+  #FaList {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
+  }
+  #ho22 {
+    margin-bottom: 0.5rem; /* 8px */
+    font-weight: 600; /* Semibold */
+  }
+  #ho23 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #ho24 {
+    padding: 1rem; /* 16px */
+    border-radius: 9999px; /* Fully rounded (circular) */
+    background-color: #f59e0b; /* Tailwind's yellow-500 */
+    color: white;
+    margin-bottom: 1rem; /* 16px */
+  }
+  #FaChartPie {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
+  }
+  #ho25 {
+    margin-bottom: 0.5rem; /* 8px */
+    font-weight: 600; /* Semibold */
+  }
+  #ho26 {
+    background-color: #f3f4f6; /* Tailwind's gray-100 */
+    padding-top: 5rem; /* 80px */
+    padding-bottom: 5rem; /* 80px */
+    padding-left: 1rem; /* 16px */
+    padding-right: 1rem; /* 16px */
+  }
+  #ho27 {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem; /* 36px */
+    font-weight: 700; /* Bold */
+    text-align: center;
+    color: #1f2937; /* Tailwind's gray-800 */
+  }
+  #ho28 {
+    margin-top: 2.5rem; /* 40px */
+    max-width: 56rem; /* 896px */
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr; /* Default to 1 column */
+    gap: 2rem; /* 32px */
+  }
+  
+  /* Apply 2-column layout on medium (md) screens and above */
+  @media (min-width: 768px) {
+    #ho28 {
+      grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+    }
+  }
+  #ho29 {
+    background-color: white;
+    padding: 1.5rem; /* 24px */
+    border-radius: 0.5rem; /* 8px */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Medium shadow */
+  }
+  #FaQuoteLeft {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
+    color: #9ca3af; /* Tailwind's gray-400 */
+  }
+  #ho30 {
+    margin-top: 1rem; /* 16px */
+  }
+  #ho31 {
+    margin-top: 1rem; /* 16px */
+    font-weight: 700; /* Bold */
+  }
+  #ho32 {
+    background-color: white;
+    padding: 1.5rem; /* 24px */
+    border-radius: 0.5rem; /* 8px */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Medium shadow */
+  }
+  #FaQuoteLeft {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
+    color: #9ca3af; /* Tailwind's gray-400 */
+  }
+  #ho33 {
+    margin-top: 1rem; /* 16px */
+  }
+  #ho34 {
+    margin-top: 1rem; /* 16px */
+    font-weight: 700; /* Bold */
+  }
+  #ho35 {
+    background-color: #3b82f6; /* Tailwind's blue-500 */
+    color: white;
+    padding-top: 5rem; /* 80px */
+    padding-bottom: 5rem; /* 80px */
+    padding-left: 1rem; /* 16px */
+    padding-right: 1rem; /* 16px */
+  }
+  #ho36 {
+    max-width: 56rem; /* 896px */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  #ho37 {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem; /* 36px */
+    font-weight: 700; /* Bold */
+  }
+  #ho38 {
+    margin-top: 1rem; /* 16px */
+  }
+  #ho39 {
+    margin-top: 2rem; /* 32px */
+    padding-left: 1.5rem; /* 24px */
+    padding-right: 1.5rem; /* 24px */
+    padding-top: 0.75rem; /* 12px */
+    padding-bottom: 0.75rem; /* 12px */
+    background-color: white;
+    color: #3b82f6; /* Tailwind's blue-500 */
+    font-weight: 600; /* Semibold */
+    border-radius: 0.5rem; /* 8px */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Medium shadow */
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #ho39:hover {
+    background-color: #f3f4f6; /* Tailwind's gray-100 */
+  }
+                                                                    

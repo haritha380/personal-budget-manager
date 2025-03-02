@@ -2,7 +2,7 @@ const express = require("express");
 const usersController = require("../controllers/usersCtrl");
 const isAuthenticated = require("../middlewares/isAuth");
 
-const userRouter = express.Router();
+const  userRouter = express.Router();
 //!Register
 userRouter.post("/api/v1/users/Register",usersController.register);
 //!Login

@@ -39,21 +39,21 @@ const CategoriesList = () => {
       .catch((e) => console.log(e));
   };
   return (
-    <div className="max-w-md mx-auto my-10 bg-white p-6 rounded-lg shadow-lg">
-      <h2 className="text-2xl font-semibold text-gray-800 mb-4">Categories</h2>
+    <div id="Ca1">
+      <h2 id="Ca2">Categories</h2>
       {/* Display message */}
       {isLoading && <AlertMessage type="loading" message="Loading" />}
       {isError && (
         <AlertMessage type="error" message={error.response.data.message} />
       )}
-      <ul className="space-y-4">
+      <ul id="Ca3">
         {data?.map((category) => (
           <li
             key={category?._id}
-            className="flex justify-between items-center bg-gray-50 p-3 rounded-md"
+             id="Ca4"
           >
             <div>
-              <span className="text-gray-800">{category?.name}</span>
+              <span  id="Ca5">{category?.name}</span>
               <span
                 className={`ml-2 px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${
                   category.type === "income"
@@ -65,15 +65,15 @@ const CategoriesList = () => {
                   category?.type?.slice(1)}
               </span>
             </div>
-            <div className="flex space-x-3">
+            <div  id="Ca6">
               <Link to={`/update-category/${category._id}`}>
-                <button className="text-blue-500 hover:text-blue-700">
+                <button id="Ca7">
                   <FaEdit />
                 </button>
               </Link>
               <button
                 onClick={() => handleDelete(category?._id)}
-                className="text-red-500 hover:text-red-700"
+                id="Ca8"
               >
                 <FaTrash />
               </button>

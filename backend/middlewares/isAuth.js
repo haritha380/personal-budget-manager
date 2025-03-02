@@ -4,6 +4,7 @@ const isAuthenticated = async (req, res, next) =>{
     //!Get the token from the header
     const headerObj = req.headers;
     const token = headerObj?.authorization?.split(' ')[1]
+    console.log(headerObj)
 //!Verify the token
 const verifyToken = jwt.verify(token, "masynctechKey",(err, decoded)=>{
 

@@ -1,0 +1,18 @@
+#a1 {
+    color: #dc2626; /* text-red-600: Sets the text color to a deep red */
+    font-size: 1.5rem; /* text-2xl: Sets the font size to 1.5rem (24px) */
+  }
+  #a2 {
+    color: #16a34a; /* text-green-600: Sets the text color to a strong green */
+    font-size: 1.5rem; /* text-2xl: Sets the font size to 1.5rem (24px) */
+  }
+  #a3 {
+    animation: spin 1s linear infinite; /* animate-spin: Applies a continuous spinning animation */
+    color: #2563eb; /* text-blue-600: Sets the text color to a medium-dark blue */
+    font-size: 1.5rem; /* text-2xl: Sets the font size to 1.5rem (24px) */
+  }
+  #a4 {
+    font-size: 0.875rem; /* text-sm: Sets the font size to 14px */
+    font-weight: 500; /* font-medium: Applies a medium font weight */
+  }
+        

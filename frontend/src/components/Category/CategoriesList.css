@@ -1,0 +1,53 @@
+#Ca1 {
+    max-width: 28rem; /* max-w-md */
+    margin-left: auto; /* mx-auto */
+    margin-right: auto; /* mx-auto */
+    margin-top: 2.5rem; /* my-10 */
+    margin-bottom: 2.5rem; /* my-10 */
+    background-color: white; /* bg-white */
+    padding: 1.5rem; /* p-6 */
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); /* shadow-lg */
+}
+#Ca2 {
+    font-size: 1.5rem; /* text-2xl */
+    line-height: 2rem; /* Tailwind's text-2xl also sets line-height */
+    font-weight: 600; /* font-semibold */
+    color: rgb(31 41 55); /* text-gray-800 */
+    margin-bottom: 1rem; /* mb-4 */
+}
+#Ca3 > * + * {
+    margin-top: 1rem; /* space-y-4 */
+}
+#Ca4 {
+    display: flex; /* flex */
+    justify-content: space-between; /* justify-between */
+    align-items: center; /* items-center */
+    background-color: rgb(249 250 251); /* bg-gray-50 */
+    padding: 0.75rem; /* p-3 */
+    border-radius: 0.375rem; /* rounded-md */
+}
+#Ca5 {
+    color: rgb(31 41 55); /* text-gray-800 */
+}
+#Ca6 {
+    display: flex; /* flex */
+}
+
+#Ca6 > * + * {
+    margin-left: 0.75rem; /* space-x-3 */
+}
+#Ca7 {
+    color: rgb(59 130 246); /* text-blue-500 */
+}
+
+#Ca7:hover {
+    color: rgb(29 78 216); /* hover:text-blue-700 */
+}
+#Ca8 {
+    color: rgb(239 68 68); /* text-red-500 */
+}
+
+#Ca8:hover {
+    color: rgb(185 28 28); /* hover:text-red-700 */
+}

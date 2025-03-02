@@ -1,0 +1,129 @@
+#u1 {
+    max-width: 56rem;            /* The maximum width is set to 56rem (roughly 896px), which limits the size of the container */
+    margin-left: auto;           /* Horizontally centers the element */
+    margin-right: auto;          /* Horizontally centers the element */
+    margin-top: 2.5rem;          /* Sets a top margin of 2.5rem (40px) */
+    margin-bottom: 2.5rem;       /* Sets a bottom margin of 2.5rem (40px) */
+    padding: 2rem;               /* Applies padding of 2rem (32px) all around the element */
+    background-color: #ffffff;   /* Sets the background color to white */
+    border-radius: 0.5rem;       /* Applies a rounded corner with a radius of 0.5rem (8px) */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Applies a medium shadow with a slight blur and spread for a soft effect */
+  }
+  #u2 {
+    margin-bottom: 0.5rem;        /* Applies a bottom margin of 0.5rem (8px) */
+    font-size: 1.5rem;            /* Sets the font size to 1.5rem (24px) */
+    text-align: center;           /* Centers the text horizontally */
+    font-weight: 800;             /* Sets the font weight to "extrabold", equivalent to 800 */
+  }
+  #u3 {
+    font-size: 1.25rem;            /* Sets the font size to 1.25rem (20px) */
+    font-weight: 600;              /* Applies a semi-bold font weight (600) */
+    color: #2d3748;               /* Sets the text color to gray-800 (a dark gray) */
+    margin-bottom: 1rem;          /* Adds a bottom margin of 1rem (16px) */
+  }
+  #u4 {
+    margin-top: 1.5rem;  /* Adds a 1.5rem (24px) gap between child elements */
+    margin-bottom: 1.5rem;  /* Adds a 1.5rem (24px) gap between child elements */
+  }
+  #u5 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;  /* Space between child elements */
+  }
+  #u6 {
+    font-size: 1.875rem;  /* 3xl size, which is 3 times the base font size */
+    color: #9CA3AF;  /* Light gray color */
+  }
+  #u7 {
+    flex-grow: 1;
+  }
+  #u8 {
+    font-size: 0.875rem; /* 14px */
+    font-weight: 500;    /* Medium weight */
+    color: #4A4A4A;      /* A medium gray color */
+  }
+  #u9 {
+    margin-top: 0.25rem; /* mt-1: Adds a small margin to the top (4px) */
+    display: block; /* Makes the element a block-level element */
+    width: 100%; /* Sets the width to 100% of its parent container */
+    border: 1px solid #D1D5DB; /* Light gray border */
+    border-radius: 0.375rem; /* Rounded corners (6px radius) */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Light shadow for subtle depth */
+    padding: 0.5rem 1rem; /* Vertical padding of 8px, horizontal padding of 16px */
+    transition: all 0.2s ease; /* Smooth transition for focus effects */
+  }
+  
+  #u9:focus {
+    outline: none; /* Removes the default outline when focused */
+    border-color: #3B82F6; /* Sets the border color to blue when focused */
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); /* Adds a blue shadow on focus */
+  }
+  #u10 {
+    font-size: 0.75rem; /* text-xs: Sets the font size to 12px */
+    color: #F87171; /* text-red-500: Sets the text color to a medium red (Tailwind red-500) */
+  }
+  #u11 {
+    display: flex; /* flex: Sets the display property to flex, which arranges child elements in a row or column */
+    align-items: center; /* items-center: Vertically centers the child elements along the cross-axis */
+    gap: 1rem; /* space-x-4: Adds 1rem (16px) horizontal space between each child element */
+  }
+  #u12 {
+    font-size: 1.875rem; /* text-3xl: Sets the font size to 3xl (1.875rem or 30px) */
+    color: #9CA3AF; /* text-gray-400: Sets the text color to a light gray (gray-400 in Tailwind CSS) */
+  }
+  #u13 {
+    flex-grow: 1; /* flex-1: This makes the element take up all available space within a flex container */
+  }
+  #u14 {
+    font-size: 0.875rem; /* text-sm: This sets the font size to 14px */
+    font-weight: 500; /* font-medium: This sets the font weight to 500, which is medium weight */
+    color: #4B5563; /* text-gray-700: This sets the text color to a medium gray */
+  }
+  #u15 {
+    margin-top: 0.25rem; /* mt-1: Adds a small top margin */
+    display: block; /* block: Makes the element a block-level element */
+    width: 100%; /* w-full: Makes the element take up the full width of its container */
+    border: 1px solid #D1D5DB; /* border border-gray-300: Applies a light gray border */
+    border-radius: 0.375rem; /* rounded-md: Applies medium rounded corners */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* shadow-sm: Adds a subtle shadow */
+    padding: 0.5rem 1rem; /* py-2 px-4: Adds padding on top and bottom (0.5rem) and left and right (1rem) */
+    outline: none; /* focus:outline-none: Removes the default outline on focus */
+    transition: border-color 0.2s, box-shadow 0.2s; /* Smooth transitions for focus styles */
+  }
+  
+  /* On focus */
+  #u15:focus {
+    border-color: #3B82F6; /* focus:border-blue-500: Changes the border color to blue */
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.4); /* focus:ring-blue-500: Adds a blue focus ring */
+  }
+  #u16 {
+    font-size: 0.75rem; /* text-xs: Sets the font size to extra small */
+    color: #F87171; /* text-red-500: Sets the text color to red (using Tailwind's red-500 color) */
+  }
+  #u17 {
+    display: flex; /* flex: Applies flexbox layout to the element */
+    justify-content: flex-end; /* justify-end: Aligns the child items (or content) to the right end of the container */
+    margin-top: 1.5rem; /* mt-6: Applies a top margin of 1.5rem (24px) */
+  }
+  #u18 {
+    background-color: #3b82f6; /* bg-blue-500: Blue background color */
+    color: white; /* text-white: White text color */
+    font-weight: bold; /* font-bold: Bold font weight */
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem; /* py-2 px-4: Adds padding */
+    border-radius: 0.375rem (6px); /* rounded: Rounded corners */
+    
+    /* Focus state styles */
+    outline: none; /* focus:outline-none: Removes the default focus outline */
+    box-shadow: 0 0 0 2px rgba(67, 56, 202, 0.5); /* focus:shadow-outline: Applies a custom outline shadow */
+    
+    transition: background-color 0.2s ease; /* Smooth transition for background color */
+  }
+  
+  #u18:hover {
+    background-color: #1e40af; /* hover:bg-blue-700: Darker blue background color on hover */
+  }
+  
+                                    
