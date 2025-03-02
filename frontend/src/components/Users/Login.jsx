@@ -9,6 +9,8 @@ import { loginAPI } from "../../services/users/userService";
 import AlertMessage from "../Alert/AlertMessage";
 import { loginAction } from "../../redux/slice/authSlice";
 
+import "./Login.css"
+
 //! Validations
 const validationSchema = Yup.object({
   email: Yup.string().email("Invalid").required("Email is required"),

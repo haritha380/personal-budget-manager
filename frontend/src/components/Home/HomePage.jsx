@@ -10,6 +10,7 @@ import {
 import { IoIosStats } from "react-icons/io";
 import { FaFilter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import "./HomePage.css";
 const HeroSection = () => {
   return (
     <>

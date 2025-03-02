@@ -7,6 +7,9 @@ import { useDispatch } from "react-redux";
 import { changePasswordAPI } from "../../services/users/userService";
 import { logoutAction } from "../../redux/slice/authSlice";
 import AlertMessage from "../Alert/AlertMessage";
+
+import "./UpdatePassword.css"
+
 const validationSchema = Yup.object({
   password: Yup.string()
     .min(5, "Password must be at least 5 characters long")

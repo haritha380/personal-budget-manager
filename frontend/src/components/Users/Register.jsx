@@ -7,6 +7,8 @@ import { FaUser, FaEnvelope, FaLock } from "react-icons/fa";
 import { registerAPI } from "../../services/users/userService";
 import AlertMessage from "../Alert/AlertMessage";
 
+import "./Register.css"
+
 //Validations
 const validationSchema = Yup.object({
   username: Yup.string().required("Username is required"),
