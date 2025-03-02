@@ -32,7 +32,7 @@ export default function PrivateNavbar() {
               <div id="pr3">
                 <div cid="pr4">
                   {/* Mobile menu button */}
-                  <Disclosure.Button id="Disclosure.Button">
+                  {/* <Disclosure.Button id="Disclosure.Button">
                     <span id="pr5" />
                     <span id="pr6">Open main menu</span>
                     {open ? (
@@ -40,7 +40,7 @@ export default function PrivateNavbar() {
                     ) : (
                       <Bars3Icon id="Bars3Icon" aria-hidden="true" />
                     )}
-                  </Disclosure.Button>
+                  </Disclosure.Button> */}
                 </div>
                 <div id="pr7">
                   {/* Logo */}

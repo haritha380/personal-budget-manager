@@ -49,12 +49,12 @@ const UserProfile = () => {
         )}
         <form onSubmit={formik.handleSubmit} id="u4">
           {/* User Name Field */}
-          <div id="u5">
-            <FaUserCircle id="u6" />
-            <div id="u7">
+          <div className="flex items-center space-x-4">
+            <FaUserCircle className="text-3xl text-gray-400" />
+            <div className="flex-1">
               <label
                 htmlFor="username"
-                id="u8"
+                className="text-sm font-medium text-gray-700"
               >
                 Username
               </label>
@@ -62,24 +62,24 @@ const UserProfile = () => {
                 {...formik.getFieldProps("username")}
                 type="text"
                 id="username"
-                className="u9"
+                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-4 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                 placeholder="Your username"
               />
             </div>
             {formik.touched.username && formik.errors.username && (
-              <span id="u10">
+              <span className="text-xs text-red-500">
                 {formik.errors.username}
               </span>
             )}
           </div>
 
           {/* Email Field */}
-          <div id="u11">
-            <FaEnvelope id="u12" />
-            <div id="u13">
+          <div className="flex items-center space-x-4">
+            <FaEnvelope className="text-3xl text-gray-400" />
+            <div className="flex-1">
               <label
                 htmlFor="email"
-                id="u14"
+                className="text-sm font-medium text-gray-700"
               >
                 Email
               </label>
@@ -87,12 +87,12 @@ const UserProfile = () => {
                 type="email"
                 id="email"
                 {...formik.getFieldProps("email")}
-                className="u15"
+                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-4 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                 placeholder="Your email"
               />
             </div>
             {formik.touched.email && formik.errors.email && (
-              <span id="u16">
+              <span className="text-xs text-red-500">
                 {formik.errors.email}
               </span>
             )}
