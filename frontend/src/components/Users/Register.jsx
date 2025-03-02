@@ -78,62 +78,62 @@ const RegistrationForm = () => {
       </p>
 
       {/* Input Field - Username */}
-      <div id="r20">
-        <FaUser id="r4" />
+      <div className="relative">
+        <FaUser className="absolute top-3 left-3 text-gray-400" />
         <input
           id="username"
           type="text"
           {...formik.getFieldProps("username")}
           placeholder="Username"
-          className="r5"
+          className="pl-10 pr-4 py-2 w-full rounded-md border border-gray-300 focus:border-blue-500 focus:ring-blue-500"
         />
         {formik.touched.username && formik.errors.username && (
-          <span id="r6">{formik.errors.username}</span>
+          <span className="text-xs text-red-500">{formik.errors.username}</span>
         )}
       </div>
 
       {/* Input Field - Email */}
-      <div id="r7">
-        <FaEnvelope id="r8" />
+      <div className="relative">
+        <FaEnvelope className="absolute top-3 left-3 text-gray-400" />
         <input
           id="email"
           type="email"
           {...formik.getFieldProps("email")}
           placeholder="Email"
-          className="r9"
+          className="pl-10 pr-4 py-2 w-full rounded-md border border-gray-300 focus:border-blue-500 focus:ring-blue-500"
         />
         {formik.touched.email && formik.errors.email && (
-          <span id="r10">{formik.errors.email}</span>
+          <span className="text-xs text-red-500">{formik.errors.email}</span>
         )}
       </div>
 
       {/* Input Field - Password */}
-      <div id="r11">
-        <FaLock id="r12" />
+      <div className="relative">
+        <FaLock className="absolute top-3 left-3 text-gray-400" />
         <input
           id="password"
           type="password"
           {...formik.getFieldProps("password")}
           placeholder="Password"
-          className="r13"
+          className="pl-10 pr-4 py-2 w-full rounded-md border border-gray-300 focus:border-blue-500 focus:ring-blue-500"
         />
         {formik.touched.password && formik.errors.password && (
-          <span id="r14">{formik.errors.password}</span>
+          <span className="text-xs text-red-500">{formik.errors.password}</span>
         )}
       </div>
 
       {/* Input Field - Confirm Password */}
-      <div id="r15">
-        <FaLock id="r16" />
+      <div className="relative">
+        <FaLock className="absolute top-3 left-3 text-gray-400" />
         <input
           id="confirmPassword"
           type="password"
           {...formik.getFieldProps("confirmPassword")}
           placeholder="Confirm Password"
-          className="r17"
+          className="pl-10 pr-4 py-2 w-full rounded-md border border-gray-300 focus:border-blue-500 focus:ring-blue-500"
         />
         {formik.touched.confirmPassword && formik.errors.confirmPassword && (
-          <span id="r18">
+          <span className="text-xs text-red-500">
             {formik.errors.confirmPassword}
           </span>
         )}
