@@ -73,32 +73,32 @@ const AddCategory = () => {
         />
       )}
       {/* Category Type */}
-      <div  id="Addc5">
+      <div className="space-y-2">
         <label
           htmlFor="type"
-           id="Addc6"
+          className="flex gap-2 items-center text-gray-700 font-medium"
         >
-          <FaWallet  id="Addc7" />
+          <FaWallet className="text-blue-500" />
           <span>Type</span>
         </label>
         <select
           {...formik.getFieldProps("type")}
           id="type"
-          className=" Addc8"
+          className="w-full p-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
         >
           <option value="">Select transaction type</option>
           <option value="income">Income</option>
           <option value="expense">Expense</option>
         </select>
         {formik.touched.type && formik.errors.type && (
-          <p  id="Addc9">{formik.errors.type}</p>
+          <p className="text-red-500 text-xs">{formik.errors.type}</p>
         )}
       </div>
 
       {/* Category Name */}
       <div className="flex flex-col">
-        <label htmlFor="name"  id="Addc10">
-          <SiDatabricks  id="SiDatabricks" />
+        <label htmlFor="name" className="text-gray-700 font-medium">
+          <SiDatabricks className="inline mr-2 text-blue-500" />
           Name
         </label>
         <input
@@ -106,10 +106,10 @@ const AddCategory = () => {
           {...formik.getFieldProps("name")}
           placeholder="Name"
           id="name"
-          className="Addc11"
+          className="w-full mt-1 border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 py-2 px-3"
         />
         {formik.touched.name && formik.errors.name && (
-          <p  id="Addc12">{formik.errors.name}</p>
+          <p className="text-red-500 text-xs italic">{formik.errors.name}</p>
         )}
       </div>
 
