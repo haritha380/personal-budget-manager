@@ -5,7 +5,7 @@ import { FaTrash, FaEdit } from "react-icons/fa";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import { listTransactionsAPI } from "../../services/transactions/transactionService";
 import { listCategoriesAPI } from "../../services/category/categoryService";
-
+import "./TransactionList.css";
 const TransactionList = () => {
   //!Filtering state
   const [filters, setFilters] = useState({

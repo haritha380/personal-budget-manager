@@ -13,6 +13,8 @@ import { listCategoriesAPI } from "../../services/category/categoryService";
 import { addTransactionAPI } from "../../services/transactions/transactionService";
 import AlertMessage from "../Alert/AlertMessage";
 
+import "./TransactionForm.css";
+
 const validationSchema = Yup.object({
   type: Yup.string()
     .required("Transaction type is required")

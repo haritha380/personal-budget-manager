@@ -7,7 +7,7 @@ import {
   listCategoriesAPI,
 } from "../../services/category/categoryService";
 import AlertMessage from "../Alert/AlertMessage";
-
+import "./CategoriesList.css";
 const CategoriesList = () => {
   //fetching
   const { data, isError, isLoading, isFetched, error, refetch } = useQuery({
