@@ -8,6 +8,8 @@ import { PlusIcon } from "@heroicons/react/20/solid";
 import { Link } from "react-router-dom";
 import { FaBlog } from "react-icons/fa";
 
+import "./PublicNavbar.css"
+
 export default function PublicNavbar() {
   return (
     <Disclosure as="nav" className="bg-white shadow"id="p1">

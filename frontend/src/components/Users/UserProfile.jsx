@@ -6,6 +6,8 @@ import UpdatePassword from "./UpdatePassword";
 import { updateProfileAPI } from "../../services/users/userService";
 import AlertMessage from "../Alert/AlertMessage";
 
+import "./UserProfile.css"
+
 const UserProfile = () => {
   // Mutation
   const { mutateAsync, isPending, isError, error, isSuccess } = useMutation({

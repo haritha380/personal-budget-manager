@@ -7,6 +7,8 @@ import { IoLogOutOutline } from "react-icons/io5";
 import { SiAuthy } from "react-icons/si";
 import { logoutAction } from "../../redux/slice/authSlice";
 
+import "./PrivateNavbar.css"
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
