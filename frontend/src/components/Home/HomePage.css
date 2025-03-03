@@ -88,12 +88,23 @@
     background-color: #f3f4f6; /* Tailwind's gray-100 */
   }
   #ho14 {
-    padding-top: 5rem; /* 80px */
-    padding-bottom: 5rem; /* 80px */
-    padding-left: 1rem; /* 16px */
-    padding-right: 1rem; /* 16px */
-    background-color: white;
+    padding-top: 5rem; 
+    padding-bottom: 5rem; 
+    padding-left: 1rem; 
+    padding-right: 1rem; 
+    /* background-image: url('istockphoto-1368169112-612x612.jpg');
+    backdrop-filter: blur(50%); */
+
+    background-image: url('istockphoto-1368169112-612x612.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    background-color: rgba(243, 238, 238, 0.851); /* White background with 50% opacity */
+    background-blend-mode:overlay; /* Blends white with the background image */
+
   }
+  
+
   #ho15 {
     font-size: 1.875rem; /* 30px */
     line-height: 2.25rem; /* 36px */
@@ -182,11 +193,17 @@
   }
   #ho26 {
 
-    background-color: #c6d9ff; /* Tailwind's gray-100 */
+    background-color: #8ba5da; /* Tailwind's gray-100 */
     padding-top: 5rem; /* 80px */
     padding-bottom: 5rem; /* 80px */
     padding-left: 1rem; /* 16px */
     padding-right: 1rem; /* 16px */
+    background-image: url('360_F_412114698_4O3D3ZYs9E9bKb7MYWAtjwklXRmSn0Ph.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    background-color: rgba(255, 255, 255, 0.5); /* White background with 50% opacity */
+    background-blend-mode:overlay; /* Blends white with the background image */
   }
   #ho27 {
     font-size: 1.875rem; /* 30px */
@@ -212,7 +229,7 @@
     }
   }
   #ho29 {
-    background-color: white;
+    background-color: rgb(247, 243, 243);
     padding: 1.5rem; /* 24px */
     border-radius: 0.5rem; /* 8px */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Medium shadow */
@@ -220,7 +237,7 @@
   #FaQuoteLeft {
     font-size: 1.25rem; /* 20px */
     line-height: 1.75rem; /* 28px */
-    color: #9ca3af; /* Tailwind's gray-400 */
+    color: #1257b7; /* Tailwind's gray-400 */
   }
   #ho30 {
     margin-top: 1rem; /* 16px */
@@ -230,7 +247,7 @@
     font-weight: 700; /* Bold */
   }
   #ho32 {
-    background-color: white;
+    background-color: rgb(244, 243, 243);
     padding: 1.5rem; /* 24px */
     border-radius: 0.5rem; /* 8px */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Medium shadow */
@@ -238,7 +255,7 @@
   #FaQuoteLeft {
     font-size: 1.25rem; /* 20px */
     line-height: 1.75rem; /* 28px */
-    color: #9ca3af; /* Tailwind's gray-400 */
+    color: #2160cd; /* Tailwind's gray-400 */
   }
   #ho33 {
     margin-top: 1rem; /* 16px */
@@ -248,7 +265,7 @@
     font-weight: 700; /* Bold */
   }
   #ho35 {
-    background-color: #3b82f6; /* Tailwind's blue-500 */
+    background-color: #527cbe; /* Tailwind's blue-500 */
     color: white;
     padding-top: 5rem; /* 80px */
     padding-bottom: 5rem; /* 80px */

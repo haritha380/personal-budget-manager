@@ -6,6 +6,8 @@ import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import { listTransactionsAPI } from "../../services/transactions/transactionService";
 import { listCategoriesAPI } from "../../services/category/categoryService";
 import "./TransactionList.css";
+import { getUserFromStorage } from "../../utils/getUserFromStorage";
+import axios from "axios";
 const TransactionList = () => {
   //!Filtering state
   const [filters, setFilters] = useState({
@@ -138,7 +140,15 @@ const TransactionList = () => {
                     <FaEdit />
                   </button>
                   <button
-                    onClick={() => handleDelete(transaction._id)}
+                    // onClick={() => handleDelete(transaction._id)}
+                    onClick={() => {
+                      axios.delete(`http://localhost:8000/api/v1/transactions/delete/${transaction._id}`, {
+                        headers: {
+                          Authorization: `Bearer ${getUserFromStorage()}`,
+                        }
+                      })
+                      transaction._id
+                    }}
                     id="l21"
                   >
                     <FaTrash />

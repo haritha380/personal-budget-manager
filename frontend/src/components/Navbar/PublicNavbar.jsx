@@ -12,7 +12,7 @@ import "./PublicNavbar.css"
 
 export default function PublicNavbar() {
   return (
-    <Disclosure as="nav" className="bg-white shadow"id="p50">
+    <Disclosure as="nav" id="p50">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"id="p2">
