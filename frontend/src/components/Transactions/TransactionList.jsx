@@ -133,12 +133,12 @@ const TransactionList = () => {
                   </span>
                 </div>
                 <div id="l19">
-                  <button
+                  {/* <button
                     onClick={() => handleUpdateTransaction(transaction._id)}
                     id="l20"
                   >
-                    <FaEdit />
-                  </button>
+                    <FaEdit /> */}
+                  {/* </button> */}
                   <button
                     // onClick={() => handleDelete(transaction._id)}
                     onClick={() => {

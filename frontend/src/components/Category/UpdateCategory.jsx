@@ -57,13 +57,13 @@ const UpdateCategory = () => {
   return (
     <form
       onSubmit={formik.handleSubmit}
-       id="Up1"
+      className="max-w-lg mx-auto my-10 bg-white p-6 rounded-lg shadow-lg space-y-6"
     >
-      <div className="text-center"id="Up2">
-        <h2 id="Up3">
+      <div className="text-center">
+        <h2 className="text-2xl font-semibold text-gray-800">
           Update Category
         </h2>
-        <p id="Up4">Fill in the details below.</p>
+        <p className="text-gray-600">Fill in the details below.</p>
       </div>
       {/* Display alert message */}
       {isError && (
@@ -82,32 +82,32 @@ const UpdateCategory = () => {
         />
       )}
       {/* Category Type */}
-      <div id="Up5">
+      <div className="space-y-2">
         <label
           htmlFor="type"
-          id="Up6"
+          className="flex gap-2 items-center text-gray-700 font-medium"
         >
-          <FaWallet id="FaWallet" />
+          <FaWallet className="text-blue-500" />
           <span>Type</span>
         </label>
         <select
           {...formik.getFieldProps("type")}
           id="type"
-          className="Up7"
+          className="w-full p-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
         >
           <option value="">Select transaction type</option>
           <option value="income">Income</option>
           <option value="expense">Expense</option>
         </select>
         {formik.touched.type && formik.errors.type && (
-          <p id="Up8">{formik.errors.type}</p>
+          <p className="text-red-500 text-xs">{formik.errors.type}</p>
         )}
       </div>
 
       {/* Category Name */}
-      <div id="Up9">
-        <label htmlFor="name" id="Up10">
-          <SiDatabricks id="Up11" />
+      <div className="flex flex-col">
+        <label htmlFor="name" className="text-gray-700 font-medium">
+          <SiDatabricks className="inline mr-2 text-blue-500" />
           Name
         </label>
         <input
@@ -115,17 +115,17 @@ const UpdateCategory = () => {
           {...formik.getFieldProps("name")}
           placeholder="Name"
           id="name"
-          className="Up12"
+          className="w-full mt-1 border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 py-2 px-3"
         />
         {formik.touched.name && formik.errors.name && (
-          <p id="Up13">{formik.errors.name}</p>
+          <p className="text-red-500 text-xs italic">{formik.errors.name}</p>
         )}
       </div>
 
       {/* Submit Button */}
       <button
         type="submit"
-        className="Up14"
+        className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition-colors duration-200 transform"
       >
         Update Category
       </button>
