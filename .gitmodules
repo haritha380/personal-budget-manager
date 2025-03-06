@@ -1,0 +1,3 @@
+[submodule "desktop-application"]
+	path = desktop-application
+	url = https://github.com/haritha380/WpfApp1
